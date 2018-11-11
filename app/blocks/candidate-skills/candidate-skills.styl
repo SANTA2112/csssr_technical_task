@@ -1,0 +1,69 @@
+.candidate-skills
+	display block
+	margin-top 4rem
+	&__wrapper
+		margin-bottom 2rem
+	&__header
+		color label_calor
+		font-family 'PT Sans'
+		font-size 1.5rem
+		font-weight 700
+	&__description
+		margin-top .5rem
+		font-size .93rem
+		line-height 1.4rem
+	&__skill-label
+		user-select none
+		cursor pointer
+		position relative
+		font-size 1.3rem
+		color #000000
+		font-weight 700
+		padding-left 1.8rem
+		&::before
+			content ''
+			position absolute
+			left 2px
+			top 50%
+			width .9rem
+			height .9rem
+			transform translateY(-50%)
+			background url('/assets/images/checkbox-area.png') no-repeat center center/cover
+			border-radius 4px
+			padding 2px
+		&::after
+			content ''
+			display none
+			position absolute
+			left 4px
+			top 30%
+			width 1.4rem
+			height 1.7rem
+			transform translateY(-50%)
+			background url('/assets/images/checkbox-status.png') no-repeat center center/cover
+		&_fix
+			&::before
+				top 25%
+	&__skill-checkbox
+		display none
+		&:checked + .candidate-skills__skill-label::after
+			display block
+	&__checkbox-wrapper
+		display flex
+		flex-direction column
+		margin-right 4rem
+		&:nth-child(2)
+			margin-right 4.2rem
+		&:last-child
+			margin-right -1rem
+	&__checkbox
+		display flex
+		justify-content space-between
+	&__skill-wrap
+		margin-bottom .4rem
+		&_fix
+			display flex
+	&__skill-link
+		color link_color
+		display inline-block
+		margin-left 5px
