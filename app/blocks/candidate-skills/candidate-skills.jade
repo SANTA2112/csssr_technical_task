@@ -2,7 +2,7 @@ include ./candidate-skills-mixin
 mixin candidate-skills()
 	+b.candidate-skills&attributes(attributes)
 		.candidate-skills__wrapper
-			h4.candidate-skills__header Расскажите о себе чекбоксами
+			h4.section__header Расскажите о себе чекбоксами
 			p.candidate-skills__description Отметьте чекбоксами пункты, которые соответствуют вашим скиллам. Кстати, отсутствие опыта не означает, что у вас меньше шансов стать одним из наших товарищей. Это означает, что вы будете получать те задачи, с которыми гарантировано будете справляться.
 		.candidate-skills__checkbox
 			.candidate-skills__checkbox-wrapper
@@ -27,7 +27,7 @@ mixin candidate-skills()
 				.candidate-skills__skill-wrap
 					input.candidate-skills__skill-checkbox(type="checkbox" id='read_blog' checked=false)
 					label.candidate-skills__skill-label(for='read_blog') Читаю
-						a.candidate-skills__skill-link(href="blog.csssr.ru") blog.csssr.ru
+						a.candidate-skills__skill-link(href="https://blog.csssr.ru") blog.csssr.ru
 				+skillstable(['laziness', 'Я ленивый(-ая)', false])
 				.candidate-skills__skill-wrap.candidate-skills__skill-wrap_fix
 					input.candidate-skills__skill-checkbox(type="checkbox" id='english_skill' checked=false)
