@@ -1,0 +1,34 @@
+include ./candidate-skills-mixin
+mixin candidate-skills()
+	+b.candidate-skills&attributes(attributes)
+		.candidate-skills__wrapper
+			h4.candidate-skills__header Расскажите о себе чекбоксами
+			p.candidate-skills__description Отметьте чекбоксами пункты, которые соответствуют вашим скиллам. Кстати, отсутствие опыта не означает, что у вас меньше шансов стать одним из наших товарищей. Это означает, что вы будете получать те задачи, с которыми гарантировано будете справляться.
+		.candidate-skills__checkbox
+			.candidate-skills__checkbox-wrapper
+				+skillstable(['bem', 'БЭМ/OOCSS', true])
+				+skillstable(['pug', 'Pug (Jade)', true])
+				+skillstable(['preproc', 'Stylus/LESS/SASS', true])
+				+skillstable(['svg', 'Работаю с SVG', false])
+				+skillstable(['semantic', 'Верстаю семантично', true])
+				+skillstable(['accessibility', 'Accessibility (A11Y)', false])
+				+skillstable(['jses', 'ES2015/ES2016', true])
+			.candidate-skills__checkbox-wrapper
+				+skillstable(['project_collector', 'Gulp/GRUNT', true])
+				+skillstable(['webpack', 'Webpack', true])
+				+skillstable(['webgl', 'Дружу с WebGL', false])
+				+skillstable(['jquery', 'jQuery', true])
+				+skillstable(['angular', 'Знаю/изучаю Angular', false])
+				+skillstable(['reactjs', 'Знаю/изучаю React', true])
+				+skillstable(['nodejs', 'Знаю/изучаю Node.js', true])
+			.candidate-skills__checkbox-wrapper
+				+skillstable(['git', 'Использую Git', true])
+				+skillstable(['has_normal_eyes', 'С глазомером всё ок', true])
+				.candidate-skills__skill-wrap
+					input.candidate-skills__skill-checkbox(type="checkbox" id='read_blog' checked=false)
+					label.candidate-skills__skill-label(for='read_blog') Читаю
+						a.candidate-skills__skill-link(href="blog.csssr.ru") blog.csssr.ru
+				+skillstable(['laziness', 'Я ленивый(-ая)', false])
+				.candidate-skills__skill-wrap.candidate-skills__skill-wrap_fix
+					input.candidate-skills__skill-checkbox(type="checkbox" id='english_skill' checked=false)
+					label.candidate-skills__skill-label.candidate-skills__skill-label_fix(for='english_skill'): span У меня хороший английский

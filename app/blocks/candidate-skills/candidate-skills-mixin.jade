@@ -1,0 +1,5 @@
+mixin skillstable(...skills)
+	each skill in skills
+		.candidate-skills__skill-wrap
+			input.candidate-skills__skill-checkbox(type="checkbox" id=skill[0] checked=skill[2])
+			label.candidate-skills__skill-label(for=skill[0])=skill[1]
