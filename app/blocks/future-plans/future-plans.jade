@@ -1,0 +1,10 @@
+include future-plans-mixin
+mixin future-plans()
+	+b.future-plans&attributes(attributes)
+		h4.section__header Какие у вас планы на будущее?
+		p.candidate-skills__description Этот ответ ни на что не повлияет. Не беда, если в будущем ваши планы поменяются.
+		.furure-plans__radio-wrap
+			+creare-radio('Верстать', 'landing', false)
+			+creare-radio('Прокачиваться в JS', 'js', true)
+			+creare-radio('Менеджерство', 'manag', false)
+			+creare-radio('Другое', 'other', false)
