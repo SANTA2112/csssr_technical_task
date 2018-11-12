@@ -7,6 +7,6 @@ inputRange.max = wbar;
 inputRange.value = wbar / 100 * 30;
 marker.style.left = `${inputRange.value - 8}px`;
 
-inputRange.addEventListener('input', e => marker.style.left = `${e.target.value - 8}px`);
+inputRange.addEventListener('input', e => (marker.style.left = `${e.target.value - 8}px`));
 
 
