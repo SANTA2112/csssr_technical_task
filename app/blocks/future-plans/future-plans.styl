@@ -1,0 +1,43 @@
+.future-plans
+	display block
+	margin-top 1.5rem
+	&__label
+		display flex
+		flex-direction row-reverse
+		position relative
+		padding-left 2.5rem
+		font-size 1.2rem
+		font-weight 700
+		user-select none
+		cursor pointer
+		margin-right 1.2rem
+		&::before
+			content ''
+			position absolute
+			left 2px
+			top 50%
+			width 2.2rem
+			height 2.2rem
+			transform translateY(-50%)
+			background url('/assets/images/radio.png') no-repeat center center/cover
+			border-radius 4px
+			padding 2px
+		&::after
+			content ''
+			display none
+			position absolute
+			left 10px
+			top 67%
+			width 1.4rem
+			height 1.4rem
+			transform translateY(-50%)
+			background url('/assets/images/radio-active.png') no-repeat center center/cover
+	&__input
+		display none
+		&:checked + .future-plans__label::after
+			display block
+
+.furure-plans__radio-wrap
+	display flex
+	margin-top 1rem
+	margin-left -.8rem
