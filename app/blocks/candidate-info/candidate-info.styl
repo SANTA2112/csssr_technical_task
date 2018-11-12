@@ -5,6 +5,7 @@
 		margin-bottom 2rem
 	&__label
 		display flex
+		position relative
 	&__span
 		margin-right 1rem
 		color label_calor
@@ -14,7 +15,6 @@
 		white-space nowrap
 	&__input
 		border none
-		border-bottom 2px solid text_color
 		padding 0 0 0.3rem 1rem
 		background-color transparent
 		color text_color
@@ -22,4 +22,14 @@
 		font-size 1.8rem
 		width 100%
 		margin-top -1rem
-		position relative
+		&-wrapper
+			flex-grow 1
+			position relative
+		&-line
+			position absolute
+			bottom 0
+			left 0
+			background url('../images/border.png') center center/cover
+			height 5px
+			width 100%
+

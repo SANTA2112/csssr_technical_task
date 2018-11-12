@@ -2,4 +2,6 @@ mixin label-info(name, inputvalue, inputname)
 	.candidate-info__label-wrap
 		label.candidate-info__label
 			span.candidate-info__span=name
-			input.candidate-info__input(name=inputname, value=inputvalue)
+			.candidate-info__input-wrapper
+				input.candidate-info__input(name=inputname, value=inputvalue)
+				.candidate-info__input-line
