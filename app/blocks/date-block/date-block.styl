@@ -1,0 +1,25 @@
+.date-block
+  display block
+  margin-top 5.1rem
+  color label_calor
+  font-weight 700
+  display flex
+  &__label
+    margin-right 1rem
+    font-size 1.4rem
+    align-self flex-end
+  &__date
+    color text_color
+    font-family "Courier New PSMT"
+    font-size 2rem
+    padding-left 0.5rem
+    font-weight 400
+    position relative
+    &::before
+      content ''
+      position absolute
+      bottom 0
+      left 0
+      width 112%
+      height 5px
+      background url('../images/border.png') center center/cover
